@@ -54,7 +54,6 @@ body {
   display: flex;
   background-color: var(--background-color);
   min-width: 1158px;
-  max-width: 1440px;
   border-bottom: 1px solid #e7e9fc;
 }
 .header .container {
@@ -99,6 +98,7 @@ body {
   color: #2e2f42;
 }
 .header_link {
+  position: relative;
   color: #2e2f42;
   display: block;
   padding-top: 24px;
@@ -106,6 +106,18 @@ body {
 }
 .header_link:is(:hover, :focus) {
   color: #404bbf;
+}
+.header_link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  margin-top: 20px;
+  background: #404bbf;
+  border-radius: 2px;
+}
+.header_link:hover:after {
+  width: 100%;
 }
 .contacts-list {
 }
@@ -420,6 +432,15 @@ body {
 }
 
 /**------PORTFOLIO-----**/
+/**------HEADER--------**/
+.portfolio-header {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 1440px;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 /**------HERO-SECTION-----*/
 .portfolio {
   padding-top: 96px;
