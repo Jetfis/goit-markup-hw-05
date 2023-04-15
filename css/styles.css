@@ -112,11 +112,12 @@ body {
   display: block;
   position: absolute;
   height: 4px;
-  margin-top: 20px;
+  bottom: 0px;
   background: #404bbf;
   border-radius: 2px;
 }
-.header_link:hover:after {
+.header_link:hover::after,
+.header_link:focus:after {
   width: 100%;
 }
 .contacts-list {
@@ -471,6 +472,23 @@ body {
   border-radius: 4px;
   background: #404bbf;
   color: #ffffff;
+}
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
+.card-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  background-color: var(--IRIS);
+  transition: transform 250ms ease;
+}
+.portfolio-list-item:hover .card-content {
+  transform: translateY(0%);
 }
 .card-list {
   display: flex;
