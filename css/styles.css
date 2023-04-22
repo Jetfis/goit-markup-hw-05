@@ -80,6 +80,10 @@ body {
 }
 .header_logo_two {
   color: #2e2f42;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header_logo_two:is(:hover, :focus) {
   color: #4d5ae5;
@@ -103,6 +107,10 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header_link:is(:hover, :focus) {
   color: #404bbf;
@@ -130,6 +138,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header_mail:is(:hover, :focus) {
   color: #404bbf;
@@ -157,6 +169,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header_phone:is(:hover, :focus) {
   color: #404bbf;
@@ -201,6 +217,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   margin: 0 auto;
+  transition-property: background, box-shadow;
+  transition-duration: 250ms;
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* WHITE */
 
   color: var(--button-color);
@@ -299,6 +319,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color, border, box-shadow;
+  transition-duration: 250ms;
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-four-soc-link:is(:hover, :focus) {
   background-color: var(--OCEAN);
@@ -424,6 +448,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:is(:hover, :focus) {
   background-color: #31d0aa;
