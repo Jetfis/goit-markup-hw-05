@@ -27,7 +27,9 @@
           >
           <ul class="header_list list link">
             <li class="header-li-try">
-              <a class="header_link list link" href="./index.html">Studio </a>
+              <a class="header_link list link current" href="./index.html"
+                >Studio
+              </a>
             </li>
             <li class="header-li-try">
               <a class="header_link list link" href="./portfolio.html"
@@ -62,7 +64,10 @@
           <h1 class="hero_section_tytle">
             Effective Solutions for Your Business
           </h1>
-          <button class="hero_btn" type="button">Order Service</button>
+          <button data-modal-open class="hero_btn" type="button">
+            Order Service
+          </button>
+          
         </div>
       </section>
       <section class="section-two">
@@ -393,5 +398,14 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+               <button data-modal-close class="modal_btn" type="button">
+              chryst
+            </div>
+           
+            </button>
+          </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
