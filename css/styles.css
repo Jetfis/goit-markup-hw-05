@@ -649,15 +649,24 @@ body {
   width: 24px;
   height: 24px;
   border: 1px solid #999999;
+  fill: rgba(46, 47, 66, 1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: fill background-color;
+  transition-duration: 250ms;
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
   width: 8px;
   height: 8px;
-  color: rgba(46, 47, 66, 1);
+  fill: inherit;
 
   display: flex;
+}
+.modal_btn:is(:hover, :focus) {
+  background-color: var(--OCEAN);
+  fill: #f4f4fd;
 }
