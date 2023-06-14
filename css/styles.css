@@ -261,13 +261,14 @@ body {
     rgba(46, 47, 66, 0.4),
     rgba(46, 47, 66, 0.4)
   );
+  transition: opacity 300ms linear, visibility 300ms linear;
 }
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
-.modal {
+/*.modal {
   box-sizing: border-box;
   background-size: cover;
   width: 100%;
@@ -276,7 +277,7 @@ body {
     rgba(46, 47, 66, 0.4),
     rgba(46, 47, 66, 0.4)
   );
-}
+}*/
 /**----SECTION 2--------**/
 .section-two {
   padding: 120px 0;
@@ -627,4 +628,36 @@ body {
 }
 .anything {
   overflow: hidden;
+}
+.modal {
+  position: absolute;
+  width: 408px;
+  min-height: 576px;
+  background-color: rgba(252, 252, 252, 1);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms linear;
+  padding: 24px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+.modal_btn {
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-close-btn {
+  width: 8px;
+  height: 8px;
+  color: rgba(46, 47, 66, 1);
+
+  display: flex;
 }
